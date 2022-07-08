@@ -1,3 +1,16 @@
-.header {
+@font-face {
+    font-family: 'Avatar';
+    src: url(./assets/Herculanum-Regular.ttf) format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    font-family: 'Avatar';
+}
+
+header {
     color: darkcyan;
+    font-family: 'Avatar';
 }
