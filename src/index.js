@@ -7,26 +7,26 @@ const display = () => {
     const body = document.querySelector('body');
 
     // create header & name
-    let header = document.createElement('header');
+    const header = document.createElement('header');
     header.innerHTML = '<h1>Middle Ring Restaurant</h1>';
 
     // create nav
-    let nav = document.createElement('ul');
+    const nav = document.createElement('ul');
     nav.setAttribute('class', 'nav')
 
-    let welcome = document.createElement('li');
+    const welcome = document.createElement('li');
     welcome.setAttribute('class', 'navItem');
     welcome.setAttribute('id', 'welcome');
     welcome.textContent = 'Welcome';
     nav.appendChild(welcome);
 
-    let menu = document.createElement('li');
+    const menu = document.createElement('li');
     menu.setAttribute('class', 'navItem');
     menu.setAttribute('id', 'menu');
     menu.textContent = 'Menu';
     nav.appendChild(menu);
 
-    let resources = document.createElement('li');
+    const resources = document.createElement('li');
     resources.setAttribute('class', 'navItem');
     resources.setAttribute('id', 'resources');
     resources.textContent = 'Resources';
@@ -41,14 +41,28 @@ const display = () => {
     resources.addEventListener('click', displayResources);
 
     // create content div
-    let content = document.createElement('div');
+    const content = document.createElement('div');
     content.setAttribute('class', 'content');
     body.appendChild(content);
 
 
     // create footer
-    let footer = document.createElement('footer');
-    footer.textContent = 'hey';
+    const footer = document.createElement('footer');
+
+    const copyright = document.createElement('p');
+    copyright.textContent = `Copyright © ${new Date().getFullYear()} jcampbell57`;
+  
+    const githubLink = document.createElement('a');
+    githubLink.href = 'https://github.com/jcampbell57';
+    githubLink.target = '_blank';
+  
+    const githubIcon = document.createElement('img');
+    githubIcon.src = '../src/assets/GitHub-32px.png';
+    githubIcon.setAttribute('class', 'github');
+
+    githubLink.appendChild(githubIcon);
+    footer.appendChild(copyright);
+    footer.appendChild(githubLink);
     body.appendChild(footer);
 };
 

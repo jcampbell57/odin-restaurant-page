@@ -36,8 +36,8 @@ header > h1 {
 /* Nav */
 .nav {
     padding: 0;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -115,4 +115,12 @@ footer {
     background-color: var(--secondary-color);
     padding: 10px;
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.github {
+    max-height: 24px;
 }
