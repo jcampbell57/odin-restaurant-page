@@ -5,7 +5,8 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        content: './src/content.js'
+        welcome: '/src/welcome.js',
+        menu: './src/menu.js',
     },
     devtool: 'inline-source-map',
     plugins: [
