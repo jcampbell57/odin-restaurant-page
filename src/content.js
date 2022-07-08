@@ -4,7 +4,24 @@ const display = () => {
     
     const displayHeader = () => {
         let header = document.createElement('header');
-        header.innerHTML = '<h1>Middle Ring</h1>';
+        header.innerHTML = '<h1>Middle Ring Restaurant</h1>';
+
+        // let navContainer = div
+        let nav = document.createElement('ul');
+        nav.setAttribute('class', 'nav')
+
+        let welcome = document.createElement('li');
+        welcome.setAttribute('class', 'navItem');
+        welcome.textContent = 'Welcome';
+        nav.appendChild(welcome);
+
+        let menu = document.createElement('li');
+        menu.setAttribute('class', 'navItem');
+        menu.textContent = 'Menu';
+        nav.appendChild(menu);
+
+        header.appendChild(nav);
+        // header.appendChild(navContainer);
         body.appendChild(header); 
     }
     
@@ -21,8 +38,8 @@ const display = () => {
         let contentInfo = document.createElement('p')
         contentInfo.setAttribute('class', 'contentInfo');
         contentInfo.textContent = 
-            'Middle Ring is a humble eatery located in Ba Sing Se adjacent to \
-            Ba Sing Se University.';
+            'Middle Ring Restaurant is a humble eatery located in the Middle Ring of \
+            Ba Sing Se adjacent to Ba Sing Se University.';
         content.appendChild(contentInfo);
     }
 

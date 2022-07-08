@@ -10,7 +10,7 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-          title: 'Middle Ring',
+          title: 'Middle Ring Restaurant',
         }),
       ],
     output: {
