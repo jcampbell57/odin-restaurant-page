@@ -1,5 +1,6 @@
 import displayWelcome from "./welcome";
 import displayMenu from "./menu";
+import displayResources from "./resources"
 import './style.css'
 
 const display = () => {
@@ -25,12 +26,19 @@ const display = () => {
     menu.textContent = 'Menu';
     nav.appendChild(menu);
 
+    let resources = document.createElement('li');
+    resources.setAttribute('class', 'navItem');
+    resources.setAttribute('id', 'resources');
+    resources.textContent = 'Resources';
+    nav.appendChild(resources);
+
     header.appendChild(nav);
     body.appendChild(header); 
     
     // nav event listeners
     welcome.addEventListener('click', displayWelcome);
     menu.addEventListener('click', displayMenu);
+    resources.addEventListener('click', displayResources);
 
     // create content div
     let content = document.createElement('div');

@@ -7,6 +7,7 @@ module.exports = {
         index: './src/index.js',
         welcome: '/src/welcome.js',
         menu: './src/menu.js',
+        resources: './src/resources.js',
     },
     devtool: 'inline-source-map',
     plugins: [

@@ -25,6 +25,7 @@ body {
 header {
     background-color: var(--secondary-color);
     color: var(--accent-color);
+    padding: 10px;
 }
 
 header > h1 {
@@ -72,7 +73,7 @@ header > h1 {
 }
 
 /* Menu Page */
-#menuList,
+.contentInfo,
 .contentInfo>li>ul {
     list-style: none;
     padding: 0;
@@ -89,6 +90,24 @@ header > h1 {
     font-weight: normal;
     margin-top: 0.5rem;
 
+}
+
+/* Resources Page */
+a,
+a:visited {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+a:hover {
+    color: rgb(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 4px rgb(0, 0, 0, 0.2);
+}
+
+a:active {
+    color: rgb(0, 0, 0, 0.9);
+    text-shadow: 1px 1px 4px rgb(0, 0, 0, 0.4);
 }
 
 /* Footer */
