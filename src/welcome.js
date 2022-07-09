@@ -32,11 +32,11 @@ const displayWelcome = () => {
     // development image source
     // exteriorImage.src = '../src/assets/exterior.webp';
     // production image source
-    exteriorImage.src = '/src/assets/exterior.webp';
+    exteriorImage.src = 'src/assets/exterior.webp';
     content.appendChild(exteriorImage);
 
     let interiorImage = document.createElement('img')
-    interiorImage.src = '../src/assets/interior.jpg';
+    interiorImage.src = './assets/interior.jpg';
     content.appendChild(interiorImage);
 
 }
