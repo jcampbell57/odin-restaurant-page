@@ -29,7 +29,10 @@ const displayWelcome = () => {
 
     // display images
     let exteriorImage = document.createElement('img')
-    exteriorImage.src = '../src/assets/exterior.webp';
+    // development image source
+    // exteriorImage.src = '../src/assets/exterior.webp';
+    // production image source
+    exteriorImage.src = '/src/assets/exterior.webp';
     content.appendChild(exteriorImage);
 
     let interiorImage = document.createElement('img')
