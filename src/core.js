@@ -80,4 +80,5 @@ const initializePage = () => {
 //         console.log('click')
 //     });
 
-//     export default initializePage;
+
+export default initializePage;
