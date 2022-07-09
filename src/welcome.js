@@ -18,7 +18,7 @@ const displayWelcome = () => {
     contentInfo.setAttribute('class', 'contentInfo');
     contentInfo.textContent = 
         'Middle Ring Restaurant is a humble eatery located in the Middle Ring of \
-        Ba Sing Se adjacent to Ba Sing Se University.';
+        Ba Sing Se adjacent to Ba Sing Se University!';
     content.appendChild(contentInfo);
 
     let contentInfo2 = document.createElement('p')
@@ -32,11 +32,11 @@ const displayWelcome = () => {
     // development image source
     // exteriorImage.src = '../src/assets/exterior.webp';
     // production image source
-    exteriorImage.src = 'src/assets/exterior.webp';
+    exteriorImage.src = '../src/assets/exterior.webp';
     content.appendChild(exteriorImage);
 
     let interiorImage = document.createElement('img')
-    interiorImage.src = './assets/interior.jpg';
+    interiorImage.src = '../src/assets/interior.jpg';
     content.appendChild(interiorImage);
 
 }
