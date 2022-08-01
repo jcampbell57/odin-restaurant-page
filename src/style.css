@@ -121,6 +121,12 @@ footer {
     gap: 10px;
 }
 
+
 .github {
-    max-height: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.github:hover {
+    transform: rotate(-360deg) scale(1.2);
 }
