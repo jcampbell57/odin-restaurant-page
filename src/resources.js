@@ -1,3 +1,5 @@
+import custImage from './assets/customer.png';
+
 const displayResources = () => {
     let content = document.querySelector('.content');
     let contentItems = content.childElementCount
@@ -46,7 +48,7 @@ const displayResources = () => {
 
     // display images
     let customerImage = document.createElement('img')
-    customerImage.src = '../src/assets/customer.webp';
+    customerImage.src = custImage;
     content.appendChild(customerImage);
 }
 

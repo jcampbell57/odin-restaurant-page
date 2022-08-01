@@ -1,3 +1,6 @@
+import exteriorImageSrc from './assets/exterior.png'
+import interiorImageSrc from './assets/interior.jpg'
+
 const displayWelcome = () => {
     let content = document.querySelector('.content');
     let contentItems = content.childElementCount
@@ -29,14 +32,11 @@ const displayWelcome = () => {
 
     // display images
     let exteriorImage = document.createElement('img')
-    // development image source
-    // exteriorImage.src = '../src/assets/exterior.webp';
-    // production image source
-    exteriorImage.src = '../src/assets/exterior.webp';
+    exteriorImage.src = exteriorImageSrc;
     content.appendChild(exteriorImage);
 
     let interiorImage = document.createElement('img')
-    interiorImage.src = '../src/assets/interior.jpg';
+    interiorImage.src = interiorImageSrc;
     content.appendChild(interiorImage);
 
 }

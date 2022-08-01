@@ -1,6 +1,7 @@
 import displayWelcome from "./welcome";
 import displayMenu from "./menu";
-import displayResources from "./resources"
+import displayResources from "./resources";
+import gitIcon from './assets/GitHub-32px.png';
 import './style.css'
 
 const display = () => {
@@ -57,7 +58,7 @@ const display = () => {
     githubLink.target = '_blank';
   
     const githubIcon = document.createElement('img');
-    githubIcon.src = '../src/assets/GitHub-32px.png';
+    githubIcon.src = gitIcon;
     githubIcon.setAttribute('class', 'github');
 
     githubLink.appendChild(githubIcon);
